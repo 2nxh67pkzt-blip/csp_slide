@@ -2,20 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'TT Lakes';
+}
+
+:root {
+  --color-title: #7E7E82;
+  --color-bg: #f8f8f8;
+  --color--btnText: #1B1C21;
+  --bgColor--list-item: #FFFFFF;
+  --color-list-item__border: #eaeaea;
 }
 
 ul {
   list-style: none;
 }
 
+.container__title {
+  padding-bottom: 30px;
+  color: var(--color-title);
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .container {
+  padding: 2rem;
   max-width: 1200px;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  background-color: var(--color-bg);
 }
 
 .list--desktop {
@@ -30,12 +47,19 @@ ul {
 }
 
 .list__item {
-  border: 1px solid #000;
-  border-radius: 12px;
+  padding: 10px;
+  background-color: var(--bgColor--list-item);
+  border: 1px solid var(--color-list-item__border);
+  border-radius: 6px;
   font-size: 64px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.list-item__btn {
+  background-color: var(--bgColor--list-item);
+  border: 0px;
 }
 
 .list__item--hidden {
@@ -48,12 +72,11 @@ ul {
   justify-content: center;
   gap: 5px;
   max-width: 200px;
-  background-color: #222;
-  border-radius: 12px;
   padding: 10px;
   border: none;
-  color: #0bf2ee;
+  background-color: var(--color-bg);
   cursor: pointer;
+  font-weight: 500;
 }
 
 .button--desktop {
@@ -92,6 +115,9 @@ ul {
 }
 
 .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: auto;
 }
 
@@ -113,4 +139,16 @@ ul {
   .button--desktop {
     display: none;
   }
+  
+  .list__item {
+  padding: 10px;
+  max-width: 240px;
+  background-color: var(--bgColor--list-item);
+  border: 1px solid var(--color-list-item__border);
+  border-radius: 6px;
+  font-size: 64px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
 }
