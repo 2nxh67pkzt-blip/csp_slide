@@ -143,6 +143,7 @@ ul {
   .list__item {
   padding: 10px;
   max-width: 240px;
+  height: 72px !important;
   background-color: var(--bgColor--list-item);
   border: 1px solid var(--color-list-item__border);
   border-radius: 6px;
