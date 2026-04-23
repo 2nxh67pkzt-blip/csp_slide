@@ -121,7 +121,7 @@ ul {
   width: auto;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .swiper {
         display: block !important;
     }
@@ -129,7 +129,7 @@ ul {
         display: block;
     }
   .list--desktop {
-    display: none;
+    display: none !important;
   }
 
   .list--mobile {
@@ -152,4 +152,19 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+}
+
+@media (max-width: 1119px) {
+  
+.list--desktop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.list__item--hidden768 {
+  display: none;
+}
+
 }
