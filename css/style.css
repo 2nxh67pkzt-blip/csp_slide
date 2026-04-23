@@ -121,7 +121,7 @@ ul {
   width: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 572px) {
     .swiper {
         display: block !important;
     }
